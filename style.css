@@ -1,0 +1,116 @@
+body{
+    background-color: black;
+}
+
+#title{
+ color:rgb(128, 160, 174);
+ display: flex;
+
+ position: relative;
+ justify-content: center;
+
+}
+
+.load{
+      height:200px;
+      width:200px;
+      position: relative;
+      margin-top: 10%;
+      margin-left: 43%;
+      border: 20px solid white;
+      border-radius: 50%;
+      border-top:20px solid red;
+      animation: l 2s ease 1s infinite normal;
+}
+
+@keyframes l {
+    0%{
+        transform: rotate(0deg);
+        border-top:20px solid red;
+    }
+
+    25%{
+        border-top:20px solid rgb(234, 156, 10);
+    }
+
+    50%{
+        border-top:20px solid rgb(177, 199, 12);
+    }
+
+    75%{
+        border-top:20px solid rgb(77, 199, 12);
+    }
+    100%{
+        transform: rotate(360deg);
+        border-top:20px solid rgb(12, 220, 130);
+    }
+    
+}
+
+
+
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+    h1{ 
+        color:rgb(128, 160, 174);
+       display: flex;
+      position: relative;
+      justify-content: center;
+       }
+            .load{
+                height:124px;
+                width:124px;
+                position: relative;
+                margin-top: 30%;
+                margin-left: 33%;
+                border: 10px solid white;
+                border-radius: 50%;
+                border-top:10px solid red;
+                animation: l 2s ease 1s infinite normal;
+          }
+  }
+  
+  /* Medium screens (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+       h1{ 
+        color:rgb(128, 160, 174);
+       display: flex;
+      position: relative;
+      justify-content: center;
+       }
+
+       .load{
+        height:150pxpx;
+        width:150pxpx;
+        position: relative;
+        margin-top: 20%;
+        margin-left: 43%;
+        border: 15px solid white;
+        border-radius: 50%;
+        border-top:15px solid rgb(221, 84, 26);
+        animation: l 2s ease 1s infinite normal;
+  }
+  }
+  
+  /* Large screens (desktops) */
+  @media only screen and (min-width: 1025px) {
+          h1{
+            color:rgb(128, 160, 174);
+            display: flex;
+           position: relative;
+           justify-content: center; 
+          }
+
+          .load{
+            height:200px;
+            width:200px;
+            position: relative;
+            margin-top: 10%;
+            margin-left: 43%;
+            border: 20px solid white;
+            border-radius: 50%;
+            border-top:20px solid red;
+            animation: l 2s ease 1s infinite normal;
+      }
+  }
+  
